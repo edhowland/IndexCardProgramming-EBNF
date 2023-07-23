@@ -1,0 +1,15 @@
+1 ; EBNF for uON or Micro JSON
+2
+3 ;  exampples of uON
+4 ; 199
+5 ; { "Addr": { "StreetNumber": 1234 } }
+6 ; { "Foo": 1807, "Bar": 277 }
+7 uON ::= Num | Object
+8 Object ::= '{' List? '}'
+9 List ::= Pair ',' List
+10     | Pair
+ 11 Pair ::=  Key ':' Value
+12 Key ::= '"' [a-zA-Z]+ '"'
+13 value ::= Num | Object
+14 Num ::= NonZero ('0' | NonZero)
+15 NonZero ::= [1-9]
