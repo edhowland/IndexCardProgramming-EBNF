@@ -1,5 +1,9 @@
-; EBNF for simple Regualar Expression language
+; EBNF for simple Regular Expression language
 ; handles like: (ab|cd), foo+, ba*r (baz)?
+; 
+; The *, +, and ? operators, , have the highest precedence, followed by
+; concatenation, and  As in arithmetic, parentheses can change how operators are
+; grouped.
 ; This version 2 uses better EBNF group + '*'
 RegExp ::= Letter | Sequence | Alternation | Repetition | Group
 Sequence ::= RegExp (RegExp)*
