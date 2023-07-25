@@ -19,3 +19,7 @@ This example shows the precedence of the various  RegExp operators
 1. '*', '+' and '?' : Repetition : Postfix operator
 2. Concatenation
 3. . '|' : Alternation : Infix operator
+
+## Source for EBNF
+
+[https://www2.cs.sfu.ca/~cameron/Teaching/384/99-3/regexp-plg.html](https://www2.cs.sfu.ca/~cameron/Teaching/384/99-3/regexp-plg.html)

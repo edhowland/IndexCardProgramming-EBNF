@@ -1,15 +1,18 @@
-1 ; EBNF for uON or Micro JSON
-2
-3 ;  exampples of uON
-4 ; 199
-5 ; { "Addr": { "StreetNumber": 1234 } }
-6 ; { "Foo": 1807, "Bar": 277 }
-7 uON ::= Num | Object
-8 Object ::= '{' List? '}'
-9 List ::= Pair ',' List
-10     | Pair
- 11 Pair ::=  Key ':' Value
-12 Key ::= '"' [a-zA-Z]+ '"'
-13 value ::= Num | Object
-14 Num ::= NonZero ('0' | NonZero)
-15 NonZero ::= [1-9]
+ ; EBNF for uON or Micro JSON
+
+;  exampples of uON
+; 199
+; { "Addr": { "StreetNumber": 1234 } }
+; { "Foo": 1807, "Bar": 277 }
+; This is a NonTerminal. This is a 'terminal'
+; The following line is an example rule showing the above and EBNF operators
+; NonTerminal ::= ('terminal' | NonTerminal)+
+uON ::= Num | Object
+ Object ::= '{' List? '}'
+List ::= Pair ',' List
+    | Pair
+ Pair ::=  Key ':' Value
+Key ::= '"' [a-zA-Z]+ '"'
+value ::= Num | Object
+Num ::= NonZero ('0' | NonZero)
+NonZero ::= [1-9]
