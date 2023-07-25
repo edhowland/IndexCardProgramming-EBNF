@@ -14,3 +14,8 @@ other's BNF rules you might encounter.
 ## Regular Expressions
 
 This example shows the precedence of the various  RegExp operators
+
+0. '(', ')' : Grouping
+1. '*', '+' and '?' : Repetition : Postfix operator
+2. Concatenation
+3. . '|' : Alternation : Infix operator

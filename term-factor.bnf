@@ -1,0 +1,8 @@
+   ; workspace for precedence rules of RegExp
+RegExp ::= Letter | Alternation
+Alternation ::= RegExp ('|' Concatenation) | Concatenation
+Concatenation ::= RegExp RegExp* | Repetition
+Repetition ::=  RegeExp RepOp
+Group ::= '(' RegExp ')'
+Letter ::= [a-zA-Z0-9]
+RepOp ::= '*' | '+' | '?'
