@@ -1,6 +1,6 @@
 ; EBNF for simple Regualar Expression language
 ; handles like: (ab|cd), foo+, ba*r
-RegExp ::= Letter | Sequence | Alternation | Repetition
+RegExp ::= Letter | Sequence | Alternation | Repetition | Group
 Sequence ::= RegExp Sequence
          | RegExp
 Alternation ::= RegExp '|' RegExp

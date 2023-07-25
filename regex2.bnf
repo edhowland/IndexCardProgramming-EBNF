@@ -1,7 +1,7 @@
 ; EBNF for simple Regualar Expression language
 ; handles like: (ab|cd), foo+, ba*r (baz)?
 ; This version 2 uses better EBNF group + '*'
-RegExp ::= Letter | Sequence | Alternation | Repetition
+RegExp ::= Letter | Sequence | Alternation | Repetition | Group
 Sequence ::= RegExp (RegExp)*
 Alternation ::= RegExp '|' RegExp
 Repetition ::= ZeroOrMore | OneOrMore | Option

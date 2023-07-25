@@ -10,3 +10,7 @@ This will only take about 8 lines of Extended Backus Naur Form (EBNF)
 By repeatedly performing this small exercise, you begin to build muscle memory
 which reinforces your skill set for creating lgrammars, which helps you understand
 other's BNF rules you might encounter.
+
+## Regular Expressions
+
+This example shows the precedence of the various  RegExp operators
