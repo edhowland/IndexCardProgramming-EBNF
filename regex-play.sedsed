@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# change our EBNF style to that compat w/ BNF playground
+# https://bnfplayground.pauliankline.com/
+sed -e 's/;/\/\//' -e "s/'/\"/g"  < $1 | sed   -E 's/([A-Z][a-zA-Z]+)/<\1>/g'   > $2 

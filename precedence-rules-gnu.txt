@@ -1,0 +1,1 @@
+In regular expressions, the *, +, and ? operators, as well as the braces { and }, have the highest precedence, followed by concatenation, and finally by . As in arithmetic, parentheses can change how operators are grouped. 

@@ -1,0 +1,14 @@
+/* regex3.bnf third attempt by using the simple rules for construction */
+
+<RE> ::= <Union> | <SimpleRE>
+<Union> ::= <RE> "|" <SimpleRE>
+<SimpleRE> ::=  <Concatenation> | <BasicRE>
+<Concatenation> ::= <SimpleRE> <BasicRE>
+<BasicRE> ::=  <Star> | <Plus> | <Option> | <ElementaryRE>
+<Star> ::=   <ElementaryRE> "*"
+<Plus> ::= <ElementaryRE> "+"
+<Option> ::= <ElementaryRE> "?"
+<ElementaryRE> ::= <Group> | <Any> | <Letter>
+<Group> ::= "(" <RE> ")"
+<Any> ::= "."
+<Letter> ::= [a-z] | [A-Z] | [0-9]

@@ -1,0 +1,9 @@
+
+<start> ::= <expr> ;
+
+<expr> ::= <parens> | <square> | <curly> | "()" ;
+
+<parens> ::= "(" <expr> ")" ;
+<square> ::= "[" <expr> "]" ;
+<curly> ::=  "{" <expr> "}" 
+ Insertion on word: #

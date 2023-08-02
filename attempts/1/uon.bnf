@@ -1,0 +1,14 @@
+; uON - Micro JSON in EBNF
+; This is a NonTerminal and this is a 'terminal'
+
+
+
+uON ::= Value?
+Value ::= Int | Object
+Object ::= '{' List? '}'
+List ::= Pair (',' Pair)*
+Pair ::= Key ':' Value
+Key ::= '"' Char+ '"'
+Char ::= [a-zA-Z]
+Int ::= NZ ('0' | NZ)*
+NZ ::= [1-9]
