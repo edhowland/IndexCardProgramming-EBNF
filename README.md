@@ -130,8 +130,8 @@ Can you spot where both of these cases reside in our grammar?
 ### Purpose and historical context
 
 This exercise was composed for BarCampGR held on Aug. 12th, 2023 and presented by
-me (Ed Howland). The participants were asked to write an implementation of a DFA
-to be the runtime for a DIY RegExp engine on 3X5 sized index cards. Alternatively,
+me (Ed Howland). The participants were asked to write an set of grammar rules
+to represent a very simple subset of JSON.
 they can use a simple note taker app on their laptops, tablets or phones. No IDEs or code editors
 were explicitly not encouraged.
 
